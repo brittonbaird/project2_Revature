@@ -1,0 +1,78 @@
+<!--  Popup for Share email -->
+
+<div class="modal-entire">
+	<div class="modal-header">
+		<h3 class="modal-title">Create New Plan!</h3>
+	</div>
+<div class="newPlanClass" ng-hide="newPlanFlag">
+					<div class="panel panel-default">
+						<div class="panel-body">
+
+							<form class="form-horizontal" name=" newPlanForm"
+								ng-submit="newPlan()" novalidate>
+								<h3 class="titleClass textCenter">CREATE A PLAN</h3>
+
+								<div class="form-group"
+									ng-class="{ 'has-error' : newPlanForm.country_name.$error.required && !newPlanForm.country_name.$pristine }">
+									<label for="country_name" class="col-sm-3 control-label">Country of Destination</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="country_name"
+											name="country_name" placeholder="Enter Country"
+											ng-model="newPlanDetails.country_name" required> <span
+											ng-show="newPlanForm.country_name.$error.required && !newPlanForm.country_name.$pristine"
+											class="help-block"> Country Name is required.</span>
+									</div>
+								</div>			
+									<div class="form-group"
+									ng-class="{ 'has-error' : newPlanForm.city_name.$error.required && !newPlanForm.city_name.$pristine }">
+									<label for="city_name" class="col-sm-3 control-label">City of Destination</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="city_name"
+											name="city_name" placeholder="Enter City"
+											ng-model="newPlanDetails.city_name" required> <span
+											ng-show="newPlanForm.city_name.$error.required && !newPlanForm.city_name.$pristine"
+											class="help-block"> City Name is required.</span>
+									</div>
+								</div>
+									<div class="form-group"
+									ng-class="{ 'has-error' : newPlanForm..$error.required && !newPlanForm.travel_date.$pristine }">
+									<label for="travel_date" class="col-sm-3 control-label">Date of Travel</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="travel_date"
+											name="travel_date" placeholder="Enter Date"
+											ng-model="newPlanDetails.travel_date" required> <span
+											ng-show="newPlanForm.travel_date.$error.required && !newPlanForm.travel_date.$pristine"
+											class="help-block"> Date of Travel is required.</span>
+									</div>
+								</div>
+									<div class="form-group"
+									ng-class="{ 'has-error' : newPlanForm.travel_return.$error.required && !newPlanForm.travel_return.$pristine }">
+									<label for="travel_return" class="col-sm-3 control-label">Date of Return</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="travel_return"
+											name="travel_return" placeholder="Enter Date"
+											ng-model="newPlanDetails.travel_return" required> <span
+											ng-show="newPlanForm.travel_return.$error.required && !newPlanForm.travel_return.$pristine"
+											class="help-block"> Date of Return is required.</span>
+									</div>
+								</div>
+									<div class="form-group"
+									ng-class="{ 'has-error' : newPlanForm.num_people.$error.required && !newPlanForm.num_people.$pristine }">
+									<label for="travel_return" class="col-sm-3 control-label">Number of People</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="num_people"
+											name="num_people" placeholder="Enter Number of People"
+											ng-model="newPlanDetails.num_people" required> <span
+											ng-show="newPlanForm.num_people.$error.required && !newPlanForm.num_people.$pristine"
+											class="help-block"> Number of People is required.</span>
+									</div>
+								</div>
+
+								</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button"
+			ng-click="shareEmail()">Create Plan</button>
+		<button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+	
+	</div>
+</div>
