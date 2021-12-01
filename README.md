@@ -24,6 +24,8 @@ To-do list:
 Use this application for tracking simple travel plans and logging them to one location
 ## Contributors
 Mariana Hoyos
+
 Ana Vazquez
+
 Britton Baird
 
