@@ -19,10 +19,8 @@ To-do list:
 * Add feature to prevent overlapping trips
 * Add Cucumber testing with Selenium
 ## Getting Started
-   Create a new folder
-   In that folder use git Bash and enter - git clone https://github.com/brittonbaird/project2_Revature.git
-   Switch to command line and navigate to the project
-   Once there type - mvn package
+* Create a new folder
+* In that folder use git Bash and enter - git clone https://github.com/brittonbaird/project2_Revature.git
    
 ## Usage
 Use this application for tracking simple travel plans and logging them to one location
